@@ -1,12 +1,15 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css'; 
+import Theater from './Component/Theater';
 
-const App = () => {
+function App() {
   return (
-    <div>
-
+    <div className="app">
+      <h1>Book My Show - Select Seats</h1>
+      <hr />
+      <Theater />
     </div>
   );
-};
+}
 
 export default App;
