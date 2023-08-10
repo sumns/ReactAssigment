@@ -1,46 +1,30 @@
-.app{
-  text-align: center;
-  margin: 20px;
+
+.seat-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
 }
 
-.theater{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-
-}
-
-.row{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.seat{
-  width: 30px;
-  height: 30px;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.seat {
   border: 2px solid green;
-}
-
-.seat.selected, .seat:hover{
-  background-color: green;
-}
-
-
-.seat.booked {
-  background-color: black; 
-  color: aliceblue;
-  cursor: not-allowed; 
-  border: none;
-}
-
-.row-name{
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
   width: 30px;
+  text-align: center;
+}
+
+.available {
+  background-color: lightblue;
+}
+
+.booked {
+  background-color: wheat;
+  cursor: not-allowed;
+}
+
+.hovered {
+  background-color: green;
 }
